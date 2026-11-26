@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'core/theme/app_theme.dart';
+import 'features/authentication/presentation/screens/welcome_screen.dart';
 
 void main() {
   runApp(const NutriverseApp());
@@ -15,7 +16,7 @@ class NutriverseApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'NUTRIVERSE',
       theme: AppTheme.lightTheme,
-      home: const Scaffold(body: Center(child: Text('Welcome to NUTRIVERSE'))),
+      home: const WelcomeScreen(),
     );
   }
 }
